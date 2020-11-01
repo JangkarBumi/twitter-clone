@@ -3,7 +3,10 @@ import React from 'react'
 const Signin = () => {
   return (
     <div>
-     <h1>Sigin</h1>
+     <h1>Signin</h1>
+     <form>
+       <input type="email"/>
+     </form>
     </div>
   )
 }

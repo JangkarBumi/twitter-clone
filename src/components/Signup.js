@@ -1,5 +1,5 @@
 import firebase from 'firebase/app';
-import React, { useContext, useState } from 'react';
+import React, { useState } from 'react';
 
 
 const Signup = () => {
@@ -7,43 +7,24 @@ const Signup = () => {
   const [password, setPassword] = useState('');
   const [error, setErrors] = useState('');
 
-  const handleGoogleLogin = () => {
-    const provider = new firebase.auth.GoogleAuthProvider();
 
-    // firebase
-    //   .auth()
-    //   .setPersistence(firebase.auth.Auth.Persistence.SESSION)
-    //   .then(() => {
-    //     firebase
-    //       .auth()
-    //       .signInWithPopup(provider)
-    //       .then((result) => {
-    //         Auth.setLoggedIn(true);
-    //       })
-    //       .catch((e) => setErrors(e.message));
-    //   });
-  };
+const handleSubmit = (e) =>{
+  e.preventDefault()
+  console.log('Submitted');
+}
 
   return (
     <div>
       <h1>Signup</h1>
 
-      <hr />
-      <button
-        onClick={() => handleGoogleLogin()}
-        className="googleBtn"
-        type="button"
-      >
-        <img
-          src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg"
-          alt="logo"
-        />
-        Signup With Google
-      </button>
+<form onSubmit={handleSubmit}>
+  <input type="email" />
 
-      <button type="submit">Login</button>
+  <input type="password" />
+  <input type="password" />
 
-      <span>{error}</span>
+  <input type="submit" value="Signup"/>
+</form>
     </div>
   );
 };
