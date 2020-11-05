@@ -15,7 +15,7 @@ const handleSubmit = (e) =>{
 
   return (
     <div>
-      <h1>Signup</h1>
+      <h1 className="text-blue-200">Signup</h1>
 
 <form onSubmit={handleSubmit}>
   <input type="email" />
