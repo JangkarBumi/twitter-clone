@@ -1,16 +1,13 @@
-import firebase from 'firebase/app';
 import 'firebase/firebase-auth';
 import 'firebase/firestore';
-import React, { useState } from 'react';
+import React from 'react';
 import './App.css';
-import Signup from './components/Signup';
-
-
+import Landing from './components/Landing';
 
 function App() {
   return (
     <div className="App">
-<Signup/>
+      <Landing />
     </div>
   );
 }
