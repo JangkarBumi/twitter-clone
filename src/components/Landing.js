@@ -64,10 +64,10 @@ export default function Landing() {
               See what's happening in the world right now
             </h2>
             <p className="mt-12 font-semibold">Join Twitter today.</p>
-            <button className="block w-full bg-blue-600 rounded-xl p-1 py-2 mt-6 font-semibold">
+            <button className="block w-full bg-blue-600 rounded-xl p-1 py-2 mt-6 font-semibold focus:outline-none">
               Sign Up
             </button>
-            <button className="block w-full border-2 rounded-xl p-1 py-2 border-blue-600  text-blue-600 mt-6 font-semibold">
+            <button className="block w-full border-2 rounded-xl p-1 py-2 border-blue-600  text-blue-600 mt-6 font-semibold focus:outline-none">
               Log in
             </button>
           </div>
